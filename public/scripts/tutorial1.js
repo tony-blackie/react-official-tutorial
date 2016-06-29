@@ -87,7 +87,6 @@ var CommentForm = React.createClass({
     if (!text || !author) {
       return;
     }
-    //TODO: send request to the server
     this.props.onCommentSubmit({author: author, text: text});
     this.setState({author: '', text: ''});
   },
